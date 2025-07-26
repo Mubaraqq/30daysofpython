@@ -1,5 +1,5 @@
 ############################################## LOOPS ###################################################
-"""
+
 count = 0
 while count < 5:
     print(count)
@@ -98,7 +98,7 @@ print(st)
 
 for num in range(6):
     print(num)
-"""
+
     # nested for loop
 student_dict = {
     'firstname':'Aliyu',
@@ -118,7 +118,7 @@ for key in student_dict:
     if key == 'skills':
         for skill in student_dict['skills']:
             print(skill)
-"""
+
     # for else
 for num in range(11):
     print(num)
@@ -128,6 +128,6 @@ else:
     # pass - we write *pass* when a statement is required to avoid errors or as a placeholder
 for num in range(1, 9):
     pass
-"""
+
 ################################################ EXERCISES ##############################################
 
