@@ -118,7 +118,7 @@ def decorators_with_parameters(function):
 def print_full_name(fname, lname, country):
     print(f'i am {fname} {lname}. i love to learn')
 print_full_name('Musa', 'Adam', 'Egypt')
-"""
+
 
 # buit-in higher oder functions - map(), filter(), reduce() - works best with lambda functions
 # map() - takes a function and iterable as paramters - map(function, iterable)
@@ -128,9 +128,10 @@ def square(x):
 #numbers_squared = map(square, numbers)
 #print(list(numbers_squared))
 
+
 # lets apply it with a lambda function
 numbers_squared = map(lambda x: x**2, numbers)
-#print(list(numbers_squared))
+print(list(numbers_squared))
 
 names = ['Asa', 'Idi', 'Ema', 'Abu']
 def change_to_upper(name):
@@ -142,3 +143,36 @@ def change_to_upper(name):
 names_upper = map(lambda names: names.upper(), names)
 print(list(names_upper))
 
+# filter() - filters the items that satisfy the filtering criteria  
+# returns boolean for each items of the iterable - filter(func, iterable)
+numbers = [1, 2, 3, 4, 5]
+def is_even(num):
+    if num % 2 == 0:
+        return True
+    return False
+even_numbers = filter(is_even, numbers)
+print(list(even_numbers))
+
+def is_odd(num):
+    if num % 2 != 0:
+        return True
+    return False
+odd_numbers = filter(is_odd, numbers)
+print(list(odd_numbers))
+
+# filter long name
+names = ['Mubarak', 'Abida', 'Abraham', 'Lidiya', 'Ermias']
+def is_name_long(name):
+    if len(name) > 6:
+        return True
+    return False
+long_names = filter(is_name_long, names)
+print(list(long_names))
+"""
+# reduce() - defined in the function module - take a function and an iterable and returns a single value
+from functools import reduce
+number_str = ['1', '2', '3', '4', '5']
+def add_two_nums(x, y):
+    return int(x) + int(y)
+total = reduce(add_two_nums, number_str)
+print(total)
