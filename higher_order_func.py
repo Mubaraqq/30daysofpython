@@ -1,4 +1,4 @@
-"""
+
     # function as a parameter
 def greet(name):
     return f'Hello, {name}!'
@@ -168,7 +168,7 @@ def is_name_long(name):
     return False
 long_names = filter(is_name_long, names)
 print(list(long_names))
-"""
+////
 # reduce() - defined in the function module - take a function and an iterable and returns a single value
 from functools import reduce
 number_str = ['1', '2', '3', '4', '5']

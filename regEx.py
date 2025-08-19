@@ -1,4 +1,4 @@
-"""
+
 import re
 txt = 'i love to teach python and js'
 # re.match(substring, string, re.I) - searches only in the beginning of the first line of string 
@@ -136,7 +136,7 @@ print(matches)
 regex_pattern1 = r'\d{1,4}' # 1 to 4 
 matches1 = re.findall(regex_pattern1, txt)
 print(matches1)
-"""
+
 # carts ^ - starts with
 import re
 txt = 'this regular expression examaple was made on June 11, 2025 and revised on June 12, 2025'

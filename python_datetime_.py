@@ -1,5 +1,5 @@
 
-"""import datetime
+import datetime
 print(dir(datetime))
 
 # getting datetime information
@@ -69,7 +69,7 @@ c = time(hour = 5, minute = 38, second = 45)
 print('c =', c)
 d = time(7, 30, 50, 200543) # h, m, s, microsecond
 print('d =', d)
-"""
+
 # difference between two points in time using
 from datetime import date, datetime
 today = date(year = 2025, month = 7, day = 31)
